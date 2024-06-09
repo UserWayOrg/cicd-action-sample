@@ -5,5 +5,6 @@ This project uses the [UserWay Action](https://github.com/UserWayOrg/cicd-action
 The GitHub Action is configured to build and analyze all branches and pull requests. See [this PR](https://github.com/UserWayOrg/cicd-action-sample/pulls) as an example.
 
 ### Continuous-Accessibility Dashboard view
+![img.png](img.png)
 
 ### Bitbucket Pull Request view
