@@ -1,0 +1,29 @@
+name: Node.js CI
+on:
+  pull_request:
+    branches: ['main']
+  push:
+    branches: ['main']
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install npm packages
+        run: |
+          npm install
+          nohup npm run dev > output.log 2>&1 &
+          sleep 5
+          curl -I http://localhost:1342/
+      - name: Run Cypress tests
+        run: |
+          npm run test:cypress
+
+      - name: UserWay Accessibility Analysis
+        uses: UserWayOrg/cicd-action@main
+        with:
+          token: ${{ secrets.USERWAY_TOKEN }}
+          report_paths: './uw-a11y-reports'
