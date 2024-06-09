@@ -26,4 +26,3 @@ jobs:
         uses: UserWayOrg/cicd-action@main
         with:
           token: ${{ secrets.USERWAY_TOKEN }}
-          report_paths: './uw-a11y-reports'
