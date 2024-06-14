@@ -6,11 +6,3 @@ The GitHub Action is configured to build and analyze all branches and pull reque
 
 ### Continuous-Accessibility Dashboard view
 ![img_0_dash.png](img_0_dash.png)
-
-### GitHub Pull Request view
-
-![img_1_pr.png](img_1_pr.png)
-
-### GitHub Check view
-
-![img_2_check.png](img_2_check.png)
