@@ -6,4 +6,4 @@ The GitHub Action is configured to build and analyze all branches and pull reque
 
 ### Continuous-Accessibility Dashboard view
 
-![img.png](img.png)
+![img1.png](img1.png)
